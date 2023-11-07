@@ -63,3 +63,89 @@ print(f"string {value}") = string interpolation, value in curly brackets is forc
 CONSTANTS = are named as capitals
 from typing import Final = imports the final class.  This class will underline constants in red if they are being changed
 CONSTANT:Final[type] = value = sets the constant using Final class
+
+
+
+
+
+
+
+07 Nov
+
+transferred
+
+tuples are initialized and can not be changed
+
+setName = {"setItem1", "setItem2", ...} #creates a set
+
+setName.union(setName2) #joins two sets together, removing duplicates
+
+setName.intersection(setName2) #finds the set items that are the same
+
+setName.difference(setName2) #finds items that are different to the set compared to 
+
+sorted(list(setName)) #changes a set into a list, then sorts it
+
+to compare two files, using hash of file and compare set
+
+myDict = {"key1":"value1", "key2":"value2", .....} #creates a new dictionary using key value pairs.  key can be int/str
+myDict = {} #alternative way to create a new dictionary
+myDict = dict() #alternative way
+
+myDict["keyName"] #returns the value associated with the keyName
+
+myDict["keyName"] = myDictionary["keyName"] modified #to change the value associated with the keyName
+
+myDict["keyName"] = value #gives new value to new keyName
+
+
+
+
+afternoon
+
+integration = know how to configure level 7/application level traffic
+              access messaging queues/bursts
+              file based sharing, read/write
+
+click drag name of file to the right side of workspace to split screen.  Can be split vertical/horizontal
+
+variableName = open("fileName", "r") #to read a file in the same place as current file.  can use path name eg: C:/folder/folder/filename.etc
+
+variableName.read() #to read the contents of the file
+
+variableName.readline() #to read a line in a file.  Using this a second time immediately after the first, will give the second line. Can go through the lines of your file.  Inserting value in () will give that many characters in the line
+
+for iterationVariable in variable:
+    statement using iterationVariable
+#creates a for loop, useful for going through a list
+
+if condition:
+    statement
+elif condition:
+    statement
+else:
+    statement
+#creates a if/elif statement.  if condition is true then run statement indented
+
+operations for conditions
+== equal to
+!= not equal to 
+>/< greater/less than
+>=/<= greater/less than or equal to
+is is the same including type
+is not is not the same including type
+
+logical conditions
+and #true if BOTH conditions are true
+or #true if EITHER condition is true
+not #makes it opposite boolean
+
+while condition:
+    statement
+#creates a while loop. Loops until the conditions are false
+
+#example while loop asking for certain input (dogs/cats)
+dogCat = None
+while dogCat != "dogs" and dogCat != "cats":
+    dogCat = input("Do you like dogs or cats?")
+
