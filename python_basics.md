@@ -66,7 +66,7 @@ CONSTANT:Final[type] = value = sets the constant using Final class
 
 
 
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
@@ -149,3 +149,120 @@ dogCat = None
 while dogCat != "dogs" and dogCat != "cats":
     dogCat = input("Do you like dogs or cats?")
 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+08 Nov
+
+break #stops while loops
+
+match variable:            #match case used to filter out variable values,
+    case variableValue:    #more complicated pattern matching than if
+        statement          #more readable than if statements
+    case variableValue:
+        statement
+    case _:                #default case, like else in if statements
+        statement          #use _ or other
+
+
+
+enum used to only use acceptable answers amd make it readable
+from enum import Enum  #to import enum into file
+
+class className(Enum):    #define allowable options, use capitals
+    OPTION = 1
+    OPTION = 2
+
+variable = className.OPTION
+
+match variable:
+    case className.OPTION
+        statement
+    case className.OPTION
+        statement
+
+
+
+range(value) #value is a number, iterable
+
+#for alternative spacing, list comprehension
+newList = [statement for i in oldList]  #can use eg i.upper() as statement
+
+#enumerate shows the index of the list items
+myNums = [0,2,4,6]                      
+for index, item in enumerate(myNums):
+    print(f"{index}.item")
+
+
+myDict = {key1 : value1, key2 : value2}   #prints dict key and value, iterate dict
+for key, value in myDict.items():
+    print(f"{key}, {value}")
+
+
+when using lists, items are first in, first out.
+use a queue, append() lines one after another to add
+when using pop(index) make sure to put in a index
+
+
+
+
+afternoon
+
+#defining a function. Return will end a function and hand back a value.  if there is no return, function will run till the end
+def functionName(inputArgument):
+    return statement
+
+
+#scope, variables defined/modified in a function, only exist/change within that function
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+09 Nov
+
+Error messages
+red shows the type of error, white explains the problem
+
+assert booleanTest, "stringReturnedIfFalse"
+eg assert 1 == 0, "expect 1 and 0 to be different"
+AssertionError # when you give the assertion a false outcome, there will be an error, only stops at first assertion problem.  String is returned when false, explain what you are trying to test.  ALternative to using print() to test.  Can use this to test many input/output, using test case tables
+
+
+#will print out the kind of error that's happening 
+try:
+    print(u)
+except Exception as e:
+    print(e)
+print("program is still operating normally")
+
+output: name 'u' is not defined
+        program is still operating normally
+
+
+#ZeroDivisionError, code stops at this level
+try:
+    print(1/0)
+except ZeroDivisionError as zde:
+    print("I caught zero division error")
+except Exception as e:
+    print(e)
+print("program is still operating normally")
+
+
+#try, except, exception error, else(if it all runs)
+try:
+    statement
+except particularError as errorVariableName:
+    statement/print
+except Exception as errorVariableName:
+    statement/print
+else:
+    statement if everything runs
+    return variableName
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
