@@ -1,3 +1,8 @@
+++++++++++++++++++++++++++++++++++++++++++
+
+
+06 Nov
+
 filename.py = make a new python file
 
 in terminal
@@ -222,6 +227,8 @@ def functionName(inputArgument):
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+
 09 Nov
 
 Error messages
@@ -265,4 +272,46 @@ else:
     return variableName
 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+10 Nov
+
+OOP = object orientated programming.  If you like this go into dev ops
+Functional programming = only use functions to program, can be painful to write fully functional programs. benefit: less prone to error, less side effects
+
+
+#defining a class, must use capital for name, must have something in the statement(if not use pass)
+class ClassName:
+    pass
+
+#initialize a class
+class ClassName:
+    def __init__(self, attribute1, attribute2):
+        self.attribute1 = attribute1
+        self.attribute2 = attribute2
+
+#create variable using class
+variableName = className(attribute1, attribute 2)
+
+#to call a class
+className.attribute
+
+#can create functions in classes to do actions
+#to call
+variableClassName.function(value)
+
+#calls the attributes of the className as a dictionary
+variableNameOfClass.__dict__
+
+
+#child class initialized
+#can use ParentClassName or super() -automatically inherit methods and attributes from parent class, but remove self from attribute list eg super().__init__(attri1, attri2)
+
+class ChildClassName(ParentClassName):
+    def __init__ (self, attribute1, attribute2, attribute3)
+        ParentClassName.__init__(self,attribute1, attribute2)    #match parentclass
+        self.attribute3 = attribute3
+
