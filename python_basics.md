@@ -308,10 +308,105 @@ variableNameOfClass.__dict__
 
 
 #child class initialized
-#can use ParentClassName or super() -automatically inherit methods and attributes from parent class, but remove self from attribute list eg super().__init__(attri1, attri2)
+#can use ParentClassName or super() -automatically inherit methods and attributes from parent class, but remove self from attribute list eg super().__init__(attri1, attri2)r
 
 class ChildClassName(ParentClassName):
     def __init__ (self, attribute1, attribute2, attribute3)
         ParentClassName.__init__(self,attribute1, attribute2)    #match parentclass
         self.attribute3 = attribute3
 
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+13 Nov
+
+ #create file
+ folder > library > libraryName.py
+ #create file - this folder used to import 
+ __init__.py in library folder
+ #create file for main code
+ main.py in folder
+
+# to confirm running main function
+#test It Allows You to Execute Code When the File Runs as a Script, but Not When It’s Imported as a Module
+if __name__ == "__main__":
+    main()
+
+#python conventions 
+variable_name
+ClassName
+method_name()
+
+#in __init__.py folder to use library, exports library methods
+from .libraryName import method/class
+
+#in child class file, to call parent class from child class.  parent class file is named the same as parent class
+from .ParentClassLibraryName import ParentClass
+
+#call two classes from classes folder
+#classes folder Ice.py
+from classes import Ice, Electric
+
+#run code in terminal as python3 main.py
+
+
+
+#data classes
+#for data transfer not methods.  information about a class
+
+#if many dataclasses you can nest them
+
+#defining data class
+@dataclass
+class InventoryItem:
+    name: str
+    quantity: int
+    serial_num: str
+
+#def data class
+    my_item1 = InventoryItem(name = "printer", 
+                             quantity = 5, 
+                             serial_num = "HDOUHKJN")
+
+
+#** copies content of item to 2nd item
+my_item2 = InventoryItem(**my_serialized_object1)
+
+#can refer to dataclass within dataclass, be aware of the order the classes are defined
+
+
+#pip install pydantic
+
+#within class def means it only applies to class
+@field_validator("country")
+@classmethod 
+def check_valid_country(cls, country: str):
+    assert country == "Ethiopia", "country name must be Ethiopia"
+
+
+#validationError.  must also add
+from pydantic import ValidationError
+try:
+    statements including invalid to trigger validation error
+except ValidationError as ve:
+    print(error message)
+else:
+statement
+
+
+#regular expressions/RegEx.  used to check if a string contains specified search pattern.  returns a match object if found or None if no matches.  to return a boolean return variable != None
+import re
+variable_name = re.function(match, string)
+
+#RegEx Functions
+findall     #returns list containing all matches
+search      #returns match object if in string
+split       #returns list where string has been split at each match
+sub         #replaces on or many matches in a string
+
+#check for special sequences to use for ReEx here
+#https://www.w3schools.com/python/python_regex.asp
+#https://www.dataquest.io/blog/regex-cheatsheet/
