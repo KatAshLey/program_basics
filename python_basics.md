@@ -410,3 +410,5 @@ sub         #replaces on or many matches in a string
 #check for special sequences to use for ReEx here
 #https://www.w3schools.com/python/python_regex.asp
 #https://www.dataquest.io/blog/regex-cheatsheet/
+
+#when defining a function enter the input type and output type eg str -> bool

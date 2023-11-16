@@ -28,3 +28,5 @@ tab to indent text
 
 ctrl + p to open files
 ctrl + shift + p to open command palette
+
+right click variable name and F2, change all occurrances of variable name.  good for spelling errors
