@@ -11,6 +11,10 @@ variable_name = FastAPI()
 async def root():
     return {"message": "Hello World"}
 
+@app.get("/items/{item_id}")
+def read_item(item_id: int, item: Item, q: Union[str, None] = None): #Default value for q is None
+    return {"item_id": item_id, "q": q, "item": item}
+
 #to run code main.py. in terminal(git bash) variable called app
 #can add --port:8001 to force it to use another port
 #uvicorn main:app --reload
