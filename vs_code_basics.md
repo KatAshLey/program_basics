@@ -1,32 +1,51 @@
-shortcuts for windows
+# shortcuts for windows
 
-alt + click to type in 2 places at once
-esc to exit this mode
+# type in 2 places at once
+alt + click 
+# exit this mode
+esc 
 
-shift + ctrl + left/right arrow keys to select whole words
+# select/highlight whole words
+shift + ctrl + left/right arrow keys 
 
-ctrl + left/right arrow keys to move cursor across words 
+# move cursor across words 
+ctrl + left/right arrow keys 
 
-ctrl + shift + K to delete whole line
+# delete a whole line
+ctrl + shift + K 
 
-ctrl + a to select all file
+# select all files
+ctrl + a 
 
-ctrl + shift + up/down arrow to select lines upwards/downwards
+# select/highlight lines upwards/downwards
+ctrl + shift + up/down arrow 
 
-ctrl + shift + home/end to select all up/down
+# select all up/down
+ctrl + shift + home/end 
 
-ctrl + b to show/hide navigator
+# show/hide navigator
+ctrl + b 
 
-ctrl + ` to show/hide terminal
+# show/hide terminal
+ctrl + ` 
 
-ctrl + f to find in current file
-ctrl + shift + f to search all files
+# find in current file
+ctrl + f 
 
-highlight line then alt + up/down arrow to move line of code up/down
+# search all files
+ctrl + shift + f 
 
-tab to indent text
+# move line of code up/down
+alt + up/down arrow 
 
-ctrl + p to open files
-ctrl + shift + p to open command palette
+# indent text
+tab 
 
-right click variable name and F2, change all occurrances of variable name.  good for spelling errors
+# open files
+ctrl + p 
+
+# open command palette
+ctrl + shift + p 
+
+# change all occurrences of variable name.  good for spelling errors
+right click variable name and F2
