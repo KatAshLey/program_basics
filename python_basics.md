@@ -1,245 +1,305 @@
-++++++++++++++++++++++++++++++++++++++++++
+# =====================================================================
 
 
-06 Nov
+# 06 Nov
 
 filename.py = make a new python file
 
-in terminal
-python3 = makes terminal ready to run python in the terminal, easy way to debug, a read-eval-print loop (REPL) mode
+#  in terminal
+# makes terminal ready to run python in the terminal, easy way to debug, a read-eval-print loop (REPL) mode
+python3
 
-quit() = quit REPL mode in terminal
+# quit REPL mode in terminal
+quit()
 
-filename.ipynb = new jupyter notebook, choose python environment.  Jupyter will allow to run line by line
+# new jupyter notebook, choose python environment.  Jupyter will allow to run line by line
+filename.ipynb
 
-variableName = value = gives a value to a variable
+# gives a value to a variable
+variable_name = value
 
-print(variableName) = shows the variable, can also use variableName
+# shows the variable, can also use variableName
+print(variable_name)
 
-variableName = input("question") = asks for an input.  Inputs will come up as pop up at command palette level
+# asks for an input.  Inputs will come up as pop up at command palette level
+variable_name = input("question")
 
-variableNameBoolean = True/False = sets variable as a boolean, must be capital for True/False
+# sets variable as a boolean, must be capital for True/False
+variable_name_boolean = True/False
 
-ctrl + Enter = execute particular line
-crtl + Alt + Enter = execute block of code
+# execute particular line
+ctrl + Enter
 
-type(variable) = will show what type the variable is
+# execute block of code
+crtl + Alt + Enter 
 
-# comment = used to add comments to code or comment out code
+# will show what type the variable is
+type(variable)
 
-variable.upper() = change string variable to uppercase
-variable.lower() - change string variable to lowercase
+# used to add comments to code or comment out code
+# comment
 
-variableName = [] = creates a list
+# change string variable to uppercase
+variable.upper() 
 
-variableName[indexPosition] = to access items in a list.  First item is index/position 0
+# change string variable to lowercase
+variable.lower()
 
-variableName[-1] = gives the last item on list
+# creates a list
+variable_name = [] 
 
-variableName[nestedListIndexPosition][indexPositionInNestedList] = how to access an item in a nested list
+# access items in a list.  Use integer/number, First item is index/position 0
+variable_name[indexPosition]
 
-len(listVariable) = gives the length at the first level, not nested
-len(listVariable[nestedListIndexPosition]) = shows length of nested variable
+# gives the last item on list
+variable_name[-1]
 
-variableName = [indexOne:indexTwo] = to return a section of a string variable.  String given is from indexOne to one less than indexTwo
+# access an item in a nested list
+variable_name[nestedListIndexPosition][indexPositionInNestedList]
 
+# gives the length of list at the first level, not nested
+len(list_variable)
 
+# shows length of nested variable
+len(list_variable[nestedListIndexPosition])
 
+# return a section of a string variable.  String given is from indexOne to one less than indexTwo
+variable_name = [indexOne:indexTwo] 
 
-shift + Enter = new code block
+# new code block
+shift + Enter 
 
-click and drag blue bar on left of each code block, can reorder blocks of code
+# can reorder blocks of code
+click and drag blue bar on left of each code block
 
-listVariable.append(newItem) = adds item to end of list
+# adds item to end of list
+list_variable.append(newItem) 
 
-listVariable.insert(indexPosition, newItem) = adds new item in the index position given
+# adds new item in the index position given
+list_variable.insert(indexPosition, newItem) 
 
-listVariable.pop(index) = removes and returns item at index, default is index -1/last item
+# removes and returns item at index, default is index -1/last item
+list_variable.pop(index)
 
-variableName.sort() = sorts a list by ascending order number or alpha.  Capital letters come before lowercase. Cannot mix int and string
-variableName.sort(reverse=True) = sorts decreasing number or alpha
-print(sorted(variableName)) = prints a sorted list without altering the original list/variableName.  Can do reverse=True
+# sorts a list by ascending order number or alpha.  Capital letters come before lowercase. Cannot mix int and string
+variable_name.sort() 
 
-int("string") = turns string into a number.  Must be a number to start with eg "352"
-str("number") = turns number into a string
+# sorts decreasing number or alpha
+variable_name.sort(reverse=True)
+
+# prints a sorted list without altering the original list/variableName.  Can do reverse=True
+print(sorted(variable_name)) 
+
+# turns string into a number.  Must be a number to start with eg "352"
+int("string") 
+
+# turns number into a string
+str("number")
 bool(value) 
-print(f"string {value}") = string interpolation, value in curly brackets is forced to string
 
-CONSTANTS = are named as capitals
-from typing import Final = imports the final class.  This class will underline constants in red if they are being changed
-CONSTANT:Final[type] = value = sets the constant using Final class
+# string interpolation, value in curly brackets is forced to string
+print(f"string {value}") 
 
+# are named as capitals
+CONSTANTS
 
+# imports the final class.  This class will underline constants in red if they are being changed
+from typing import Final 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-07 Nov
-
-transferred
-
-tuples are initialized and can not be changed
-
-setName = {"setItem1", "setItem2", ...} #creates a set
-
-setName.union(setName2) #joins two sets together, removing duplicates
-
-setName.intersection(setName2) #finds the set items that are the same
-
-setName.difference(setName2) #finds items that are different to the set compared to 
-
-sorted(list(setName)) #changes a set into a list, then sorts it
-
-to compare two files, using hash of file and compare set
-
-myDict = {"key1":"value1", "key2":"value2", .....} #creates a new dictionary using key value pairs.  key can be int/str
-myDict = {} #alternative way to create a new dictionary
-myDict = dict() #alternative way
-
-myDict["keyName"] #returns the value associated with the keyName
-
-myDict["keyName"] = myDictionary["keyName"] modified #to change the value associated with the keyName
-
-myDict["keyName"] = value #gives new value to new keyName
+# sets the constant using Final class
+CONSTANT:Final[type] = value
 
 
 
+# ======================================================================
 
-afternoon
 
-integration = know how to configure level 7/application level traffic
-              access messaging queues/bursts
-              file based sharing, read/write
 
-click drag name of file to the right side of workspace to split screen.  Can be split vertical/horizontal
+# 07 Nov
 
-variableName = open("fileName", "r") #to read a file in the same place as current file.  can use path name eg: C:/folder/folder/filename.etc
+# tuples are initialized and can not be changed
 
-variableName.read() #to read the contents of the file
+# creates a set
+set_name = {"set_item1", "set_item2", ...} 
 
-variableName.readline() #to read a line in a file.  Using this a second time immediately after the first, will give the second line. Can go through the lines of your file.  Inserting value in () will give that many characters in the line
+# joins two sets together, removing duplicates
+set_name.union(set_name2) 
 
-for iterationVariable in variable:
-    statement using iterationVariable
-#creates a for loop, useful for going through a list
+# finds the set items that are the same
+set_name.intersection(set_name2) 
 
+# finds items that are different to the set compared to 
+set_name.difference(set_name2)
+
+# changes a set into a list, then sorts it
+sorted(list(set_name)) 
+
+#  compare two files, using hash of file and compare set
+
+# creates a new dictionary using key value pairs.  key can be int/str
+my_dict = {"key1":"value1", "key2":"value2", .....} 
+
+# alternative way to create a new dictionary
+my_dict = {} 
+
+# alternative way
+my_dict = dict() 
+
+# returns the value associated with the keyName
+my_dict["keyName"] 
+
+# to change the value associated with the keyName
+my_dict["keyName"] = myDictionary["keyName"] modified 
+
+# gives new value to new keyName
+my_dict["keyName"] = value 
+
+
+# know how to configure level 7/application level traffic access messaging queues/bursts file based sharing, read/write
+integration 
+
+# split screen.  Can be split vertical/horizontal
+click drag name of file to the right side of workspace 
+
+# read a file in the same place as current file.  can use path name eg: C:/folder/folder/filename.etc
+variable_name = open("file_name", "r") 
+
+# read the contents of the file
+variable_name.read()
+
+# read a line in a file.  Using this a second time immediately after the first, will give the second line. Can go through the lines of your file.  Inserting value in () will give that many characters in the line
+variable_name.readline() 
+
+# creates a for loop, useful for going through a list
+for iteration_variable in variable:
+    statement using iteration_variable
+
+# creates a if/elif statement.  if condition is true then run statement indented
 if condition:
     statement
 elif condition:
     statement
 else:
     statement
-#creates a if/elif statement.  if condition is true then run statement indented
 
-operations for conditions
-== equal to
-!= not equal to 
->/< greater/less than
->=/<= greater/less than or equal to
-is is the same including type
-is not is not the same including type
+# operations for conditions
+# equal to
+== 
+# not equal to 
+!= 
+# greater/less than
+>/< 
+# greater/less than or equal to
+>=/<= 
+# is the same including type
+is 
+# is not the same including type
+is not 
 
-logical conditions
-and #true if BOTH conditions are true
-or #true if EITHER condition is true
-not #makes it opposite boolean
+# logical conditions
+# true if BOTH conditions are true
+and 
+# true if EITHER condition is true
+or 
+# makes it opposite, boolean
+not 
 
+# creates a while loop. Loops until the conditions are false
 while condition:
     statement
-#creates a while loop. Loops until the conditions are false
 
-#example while loop asking for certain input (dogs/cats)
+# example while loop asking for certain input (dogs/cats)
 dogCat = None
 while dogCat != "dogs" and dogCat != "cats":
     dogCat = input("Do you like dogs or cats?")
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ====================================================================
 
 
 
-08 Nov
+# 08 Nov
 
-break #stops while loops
+# stops while loops
+break 
 
-match variable:            #match case used to filter out variable values,
-    case variableValue:    #more complicated pattern matching than if
-        statement          #more readable than if statements
-    case variableValue:
+# match case used to filter out variable values, more complicated pattern matching than if, more readable than if statements
+match variable:            
+    case variable_value:    
+        statement          
+    case variable_value:
         statement
-    case _:                #default case, like else in if statements
-        statement          #use _ or other
+    case _:                # default case, like else in if statements
+        statement          # use _ or other
 
 
-
-enum used to only use acceptable answers amd make it readable
+# enum used to only use acceptable answers amd make it readable
 from enum import Enum  #to import enum into file
 
-class className(Enum):    #define allowable options, use capitals
+# define allowable options, use capitals
+class class_name(Enum):    
     OPTION = 1
     OPTION = 2
 
-variable = className.OPTION
+variable = class_name.OPTION
 
 match variable:
-    case className.OPTION
+    case class_name.OPTION
         statement
-    case className.OPTION
+    case class_name.OPTION
         statement
 
 
 
-range(value) #value is a number, iterable
+# value is a number, iterable
+range(value) 
 
-#for alternative spacing, list comprehension
-newList = [statement for i in oldList]  #can use eg i.upper() as statement
+# for alternative spacing, list comprehension, can use eg i.upper() as statement
+new_list = [statement for i in old_list]  
 
-#enumerate shows the index of the list items
-myNums = [0,2,4,6]                      
-for index, item in enumerate(myNums):
+# enumerate shows the index of the list items
+my_nums = [0,2,4,6]                      
+for index, item in enumerate(my_nums):
     print(f"{index}.item")
 
 
-myDict = {key1 : value1, key2 : value2}   #prints dict key and value, iterate dict
-for key, value in myDict.items():
+# prints dict key and value, iterate dict
+my_dict = {key1 : value1, key2 : value2}   
+for key, value in my_dict.items():
     print(f"{key}, {value}")
 
 
-when using lists, items are first in, first out.
-use a queue, append() lines one after another to add
-when using pop(index) make sure to put in a index
+# when using lists, items are first in, first out.
+# use a queue, append() lines one after another to add
+# when using pop(index) make sure to put in a index
 
 
-
-
-afternoon
-
-#defining a function. Return will end a function and hand back a value.  if there is no return, function will run till the end
-def functionName(inputArgument):
+# defining a function. Return will end a function and hand back a value.  if there is no return, function will run till the end
+def function_name(input_argument):
     return statement
 
 
-#scope, variables defined/modified in a function, only exist/change within that function
+# scope, variables defined/modified in a function, only exist/change within that function
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ===========================================================
 
 
 
-09 Nov
+# 09 Nov
 
-Error messages
-red shows the type of error, white explains the problem
+# Error messages
+# red shows the type of error, white explains the problem
 
-assert booleanTest, "stringReturnedIfFalse"
+# when you give the assertion a false outcome, there will be an error, only stops at first assertion problem.  String is returned when false, explain what you are trying to test.  ALternative to using print() to test.  Can use this to test many input/output, using test case tables
+assert boolean_test, "string_returned_if_false"
 eg assert 1 == 0, "expect 1 and 0 to be different"
-AssertionError # when you give the assertion a false outcome, there will be an error, only stops at first assertion problem.  String is returned when false, explain what you are trying to test.  ALternative to using print() to test.  Can use this to test many input/output, using test case tables
+AssertionError 
 
 
-#will print out the kind of error that's happening 
+# will print out the kind of error that's happening 
 try:
     print(u)
 except Exception as e:
@@ -250,7 +310,7 @@ output: name 'u' is not defined
         program is still operating normally
 
 
-#ZeroDivisionError, code stops at this level
+# ZeroDivisionError, code stops at this level
 try:
     print(1/0)
 except ZeroDivisionError as zde:
@@ -260,55 +320,55 @@ except Exception as e:
 print("program is still operating normally")
 
 
-#try, except, exception error, else(if it all runs)
+# try, except, exception error, else(if it all runs)
 try:
     statement
-except particularError as errorVariableName:
+except particular_error as error_variable_name:
     statement/print
-except Exception as errorVariableName:
+except Exception as error_variable_name:
     statement/print
 else:
     statement if everything runs
-    return variableName
+    return variable_name
 
 
 
-+++++++++++++++++++++++++++++++++++++++++++++++++
+# =============================================================
 
 
 
-10 Nov
+# 10 Nov
 
-OOP = object orientated programming.  If you like this go into dev ops
-Functional programming = only use functions to program, can be painful to write fully functional programs. benefit: less prone to error, less side effects
+# OOP = object orientated programming.  If you like this go into dev ops
+# Functional programming = only use functions to program, can be painful to write fully functional programs. benefit: less prone to error, less side effects
 
 
-#defining a class, must use capital for name, must have something in the statement(if not use pass)
+# defining a class, must use capital for name, must have something in the statement(if not use pass)
 class ClassName:
     pass
 
-#initialize a class
+# initialize a class
 class ClassName:
     def __init__(self, attribute1, attribute2):
         self.attribute1 = attribute1
         self.attribute2 = attribute2
 
-#create variable using class
-variableName = className(attribute1, attribute 2)
+# create variable using class
+variable_name = ClassName(attribute1, attribute 2)
 
-#to call a class
-className.attribute
+# to call a class
+ClassName.attribute
 
-#can create functions in classes to do actions
-#to call
-variableClassName.function(value)
+# can create functions in classes to do actions
+# to call
+VariableClassName.function(value)
 
-#calls the attributes of the className as a dictionary
-variableNameOfClass.__dict__
+# calls the attributes of the className as a dictionary
+VariableNameOfClass.__dict__
 
 
-#child class initialized
-#can use ParentClassName or super() -automatically inherit methods and attributes from parent class, but remove self from attribute list eg super().__init__(attri1, attri2)r
+# child class initialized
+# can use ParentClassName or super() -automatically inherit methods and attributes from parent class, but remove self from attribute list eg super().__init__(attri1, attri2)r
 
 class ChildClassName(ParentClassName):
     def __init__ (self, attribute1, attribute2, attribute3)
@@ -317,49 +377,52 @@ class ChildClassName(ParentClassName):
 
 
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# ===================================================================
 
 
 
-13 Nov
+# 13 Nov
 
- #create file
- folder > library > libraryName.py
- #create file - this folder used to import 
- __init__.py in library folder
- #create file for main code
- main.py in folder
+# create file
+folder > library > libraryName.py
+
+# create file - this folder used to import 
+__init__.py in library folder
+
+# create file for main code
+main.py in folder
 
 # to confirm running main function
-#test It Allows You to Execute Code When the File Runs as a Script, but Not When It’s Imported as a Module
+# test It Allows You to Execute Code When the File Runs as a Script, but Not When It’s Imported as a Module
 if __name__ == "__main__":
     main()
 
-#python conventions 
+# python conventions 
 variable_name
 ClassName
 method_name()
 
-#in __init__.py folder to use library, exports library methods
+# in __init__.py folder to use library, exports library methods
 from .libraryName import method/class
 
-#in child class file, to call parent class from child class.  parent class file is named the same as parent class
+# in child class file, to call parent class from child class.  parent class file is named the same as parent class
 from .ParentClassLibraryName import ParentClass
 
-#call two classes from classes folder
-#classes folder Ice.py
+# call two classes from classes folder
+# classes folder Ice.py
 from classes import Ice, Electric
 
-#run code in terminal as python3 main.py
+# run code in terminal 
+python3 main.py
 
 
 
-#data classes
-#for data transfer not methods.  information about a class
+# data classes
+# for data transfer not methods.  information about a class
 
-#if many dataclasses you can nest them
+# if many dataclasses you can nest them
 
-#defining data class
+# defining data class
 @dataclass
 class InventoryItem:
     name: str
@@ -372,22 +435,23 @@ class InventoryItem:
                              serial_num = "HDOUHKJN")
 
 
-#** copies content of item to 2nd item
+# copies content of item to 2nd item
 my_item2 = InventoryItem(**my_serialized_object1)
 
-#can refer to dataclass within dataclass, be aware of the order the classes are defined
+# can refer to dataclass within dataclass, be aware of the order the classes are defined
 
 
-#pip install pydantic
+# install pydantics, in terminal
+pip install pydantic
 
-#within class def means it only applies to class
+# within class def means it only applies to class
 @field_validator("country")
 @classmethod 
 def check_valid_country(cls, country: str):
     assert country == "Ethiopia", "country name must be Ethiopia"
 
 
-#validationError.  must also add
+# validationError.  must also add
 from pydantic import ValidationError
 try:
     statements including invalid to trigger validation error
@@ -397,11 +461,11 @@ else:
 statement
 
 
-#regular expressions/RegEx.  used to check if a string contains specified search pattern.  returns a match object if found or None if no matches.  to return a boolean return variable != None
+# regular expressions/RegEx.  used to check if a string contains specified search pattern.  returns a match object if found or None if no matches.  to return a boolean return variable != None
 import re
 variable_name = re.function(match, string)
 
-#RegEx Functions
+# RegEx Functions
 findall     #returns list containing all matches
 search      #returns match object if in string
 split       #returns list where string has been split at each match
@@ -411,4 +475,4 @@ sub         #replaces on or many matches in a string
 #https://www.w3schools.com/python/python_regex.asp
 #https://www.dataquest.io/blog/regex-cheatsheet/
 
-#when defining a function enter the input type and output type eg str -> bool
+# when defining a function enter the input type and output type eg str -> bool

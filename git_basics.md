@@ -1,74 +1,120 @@
-ls = list directory
-mkdir learn_git = make a directory called learn_git
-cd .\learn_git\ = change directory
-tab = to scroll through folders
-cd.. = go back one folder
-git init = git started
-ls -Force = list directory includes hidden folders
-make sure to use powershell in the terminal
-git status = shows status of commits in folder
-git add . = adds all files to folder
-git add filename = adds filename file to folder
-git commit -m "my first commit" = commits files. use a good commit message to describe the change"___"
-git log = shows the commits, use q to exit this
-make sure to add before commit as it wont commit properly
-gti checkout commitNumber =  use commitNumber shown in git log
-git checkout main = back to most updated version
+#  commands in terminal powershell or gitbash
+# list directory
+ls
 
-** default branch may be called main or master
+# make a directory called learn_git
+mkdir learn_git
 
-Right click file in source control, stage change is the same as git add, must do this before commit button
+# change directory
+cd .\learn_git\ 
+
+# to scroll through folders
+tab
+
+# go back one folder
+cd..
+
+# git started
+git init
+
+# list directory includes hidden folders
+ls -Force 
+
+# shows status of commits in folder
+git status 
+
+# adds all files to folder
+git add . 
+
+# adds filename file to folder
+git add filename 
+
+# commits files. use a good commit message to describe the change"___"
+git commit -m "my first commit comment"
+
+# shows the commits, use q to exit this
+git log
+
+# make sure to add before commit as it wont commit properly
+# use commitNumber shown in git log
+gti checkout commitNumber 
+
+# back to most updated version
+git checkout main 
+
+
+# default branch may be called main or master
+
+# Right click file in source control, stage change is the same as git add, must do this before commit button
 source control message is "commit name"
 
-git diff = shows unstaged changes
+# shows unstaged changes
+git diff 
 
-source control > filename = shows visually staged changes to be committed
+# shows visually staged changes to be committed
+source control > filename 
 
-git diff [commit_hash] = compares commit to current commit
-
-git tag "vx.y.z" = to give current commit a tag, version numbers.  Use numbers only. x = major change, y = somewhat change, z = minor change
-
-git checkout tags/[tag]= search by tag
-
-git checkout [branch] search for branch
-
-git tag -d [tag_name] = delete tag name, multiple tags with space between
-
-git tag [newname] [oldname] = creates a new tag new from old, then can delete old tag with -d
-
-git tag -l = show list of tags
+# compares commit to current commit
+git diff [commit_hash] 
 
 
+# to give current commit a tag, version numbers.  Use numbers only. x = major change, y = somewhat change, z = minor change
+git tag "vx.y.z" 
+
+# search by tag
+git checkout tags/[tag]
+
+# search for branch
+git checkout [branch] 
+
+# delete tag name, multiple tags with space between
+git tag -d [tag_name] 
+
+# creates a new tag new from old, then can delete old tag with -d
+git tag [newname] [oldname] 
+
+# show list of tags
+git tag -l 
 
 
-branches
-naming conventions, also add task number eg feature/ ACN-XXX-add-cat
+
+
+# branches
+# naming conventions, also add task number eg feature/ ACN-XXX-add-cat
 feature/______ = adding a new feature
 bugfix/_______ = fixing bugs
 
-git branch [branch_name] = creates new branch with name
+# creates new branch with name
+git branch [branch_name] 
 
-git status = shows what branch you are on
+# shows what branch you are on
+git status 
 
-git branch -a = list branches, highlighted shows current branch
+# list branches, highlighted shows current branch
+git branch -a 
 
-git checkout [branch_name] = to move branch, must do commit on current branch before moving
+# to move branch, must do commit on current branch before moving
+git checkout [branch_name] 
 
-move branch, make changes, commit, go back to main branch to merge new branch
+# move branch, make changes, commit, go back to main branch to merge new branch
 
-git merge [name_of_branch] = to merge branches
+# to merge branches
+git merge [name_of_branch] 
 
-git branch -a --merged = see past merged branches
+# see past merged branches
+git branch -a --merged 
 
-git branch -d [branch_name] = remove branch, not recommended
+# remove branch, not recommended
+git branch -d [branch_name] 
 
 
 
 
-GitHub
+# GitHub
 origin refers to local files
 remote refers to a remote location for files
 
+# create new repo
 web browser
 login github
 create new repository 
@@ -76,17 +122,22 @@ name restart-homework
 select add readme
 gitignore template python
 
-code > HTTPS > copy link
+code >> HTTPS >> copy link
 
-vs code
+# in vs code
 open folder where you want to copy repository to
 
-git clone [link] = pulls repository to local, also creates new folder in current directory.  make sure you are not creating this in a current repository
+# pulls repository to local, also creates new folder in current directory.  make sure you are not creating this in a current repository
+git clone [link] 
 
-cd [repository_name] = make sure to move into the repository after creating cloning it
+# make sure to move into the repository after creating cloning it
+cd [repository_name] 
 
-code . = opens new window in vscode using the repository created
+# opens new window in vscode using the repository created
+code .
 
-git push = to push files to remote, must add and commit before pushing
+# push files to remote/web, must add and commit before pushing
+git push 
 
+# pulls files down to local/ your computer
 git pull request

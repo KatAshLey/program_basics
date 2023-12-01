@@ -20,7 +20,7 @@ Use markdown Preview enhanced at top of this window (ctrl + k v)
 
 `inline quote` out of line 
 
-```py
+```py for block code
 ` key top left of keyboard
 a=(5+1)
 print (ans)
