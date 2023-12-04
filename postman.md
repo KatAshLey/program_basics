@@ -9,7 +9,7 @@
 # hit send
 
 # check restart homework week03 api_pt1 for more examples
-# put working examples into body of postman, ra0w >> json
+# put working examples into body of postman, raw >> json
 # to check if api_pt1 works in postman
 # change to PUT, enter HTTP address http://127.0.0.1:8000/items/riuage56
 # enter inventory item in body tab, send, should give null result
