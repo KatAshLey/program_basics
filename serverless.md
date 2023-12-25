@@ -76,12 +76,12 @@ Default output format [None]: yaml
 # to check if above configure worked
 aws sts get-caller-identity
 
-# activate for use and deactivate when not being used in AWS
+# activate access key for use and deactivate when not being used in AWS
 
 # Nicks instructions
 ![Alt text](image-5.png)
 
-# ensure cd folder, package yaml file
+# ensure cd folder, package yaml file, with Docker open
 sls package
 
 # to deploy
@@ -137,5 +137,16 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/list_amazons3.html
 # requirement for docker use???
 sls plugin install -n serverless-python-requirements
 
+# to install packages locally, check cloudwatch for any modules it may also need in requirements.txt
+pip install -r requirements.txt
+
 # ensure lambda runtime setting set
 AWS -> Lambda -> choose function -> runtime -> choose the same python version used to write
+
+# make sure that Docker desktop app is open and running before you package and deploy
+npm install
+sls package
+sls deploy
+
+# to force deployment
+sls deploy --force
